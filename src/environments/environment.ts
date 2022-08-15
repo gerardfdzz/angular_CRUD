@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiCrud: 'http://localhost:49155/',
+  apiCrud: 'https://localhost:44323/',
 };
 
 /*
