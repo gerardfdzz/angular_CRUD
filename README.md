@@ -1,21 +1,13 @@
-# Angular CrudStudents 2
-Para arrancar el servidor que mantiene el Crud deberas abrir docker y ejecutar el siguiente comando:
-## 🐋 Docker
-```
-docker run -p49155:80 jpromeropereira/students-crud:latest
-```
-⚠️ Si quieres utilizar este docker para tu prouyecto asegurate de poner tu puerto en lugar del **49155**
-
 ## Funcionamiento
 Este Angular esta pensado para funcionar con un servidor .NET creado en C# que es el que se ejecuta con el comando de doker.
 Permite hacer varias gestiones con un JSON de datos:
-- Peticiones tipo get: ``http://localhost:49155/students/list``
-- Peticiones tipo post: ``http://localhost:49155/students/add``
-- Peticiones tipo delete: ``http://localhost:49155/students/delete/{id}``
-- Peticiones tipo update: ``http://localhost:49155/students/update``
+- Peticiones tipo get: ``http://localhost:44323/students/list``
+- Peticiones tipo post: ``http://localhost:44323/students/add``
+- Peticiones tipo delete: ``http://localhost:44323/students/delete/{id}``
+- Peticiones tipo update: ``http://localhost:44323/students/update``
 
 Cada tipo de peticion devuelve un observable, que es enviado hasta los componentes para tratarlos como es debido.
-Se crea un [SnakBar](https://material.angular.io/components/snack-bar/overview) por cada tipo de peticion, indicando la accion al usuario.
+Se crea un [SnackBar](https://material.angular.io/components/snack-bar/overview) por cada tipo de peticion, indicando la accion al usuario.
 La información se actualiza "En tiempo real" al crear, modificar o borrar los elementos.
 
 ## Multimodulo
